@@ -8,23 +8,23 @@ public class Road {
 		TrafficSign s2 = new TrafficSign(20);
 		TrafficSign s3 = new TrafficSign(50);
 		
-		System.out.println("s1: " + s1.getValue() + " s2: " + s2.getValue() + " s3: " + s3.getValue());
+		System.out.println("s1: " + s1 + " s2: " + s2 + " s3: " + s3);
 		
 		alterSignValue(s2,35);
-		System.out.println("s1: " + s1.getValue() + " s2: " + s2.getValue() + " s3: " + s3.getValue());
+		System.out.println("s1: " + s1 + " s2: " + s2 + " s3: " + s3);
 		
 		alterSignValue(s1,45);
-		System.out.println("s1: " + s1.getValue() + " s2: " + s2.getValue() + " s3: " + s3.getValue());
+		System.out.println("s1: " + s1 + " s2: " + s2 + " s3: " + s3);
 		
 		alterSignValue(s1,65);
-		System.out.println("s1: " + s1.getValue() + " s2: " + s2.getValue() + " s3: " + s3.getValue());
+		System.out.println("s1: " + s1 + " s2: " + s2 + " s3: " + s3);
 		
 	}
 	
 	public static void alterSignValue(TrafficSign sign, int signValue){
 		
 		sign.setValue(signValue);
-		System.out.println(sign.getValue());		
+		System.out.println(sign);		
 	}
 
 }
